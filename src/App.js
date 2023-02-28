@@ -6,11 +6,7 @@ import { database } from "./firebase";
 import { AuthProvider } from "./contexts/AuthContext";
 import { ProfileProvider } from "./contexts/ProfileContext";
 
-import SideBar from "./components/SideBar/SideBar";
-
-import Chat from "./components/ChatBot/Chat";
-import Home from "./components/Home/Home";
-import Join from "./components/Join/Join";
+import { SideBar, Home, Chat, Join } from "./components";
 
 import "./App.css";
 
@@ -32,7 +28,7 @@ const App = () => {
       <div className="app__container" id="app__container">
         <AuthProvider>
           <Router>
-            <Route path="/join" component={Join} />
+            <Route exact path="/join" component={Join} />
             <ProfileProvider>
               <PrivateRoute
                 path={["/", "/chat"]}
