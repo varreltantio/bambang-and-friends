@@ -7,6 +7,13 @@ https://bambangandfriends-999c6.web.app
 
 Bambang and Friends is a website based game built with React JS
 
+## Installation
+
+1. git clone git@github.com:varreltantio/bambang-and-friends.git
+2. cd bambang-and-friends
+3. npm install
+4. npm start
+
 ### Use
 * create-react-app
 * firebase
